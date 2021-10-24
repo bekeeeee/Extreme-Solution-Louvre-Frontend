@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "../hooks/useTypedSelector";
 import { useActions } from "../hooks/useActions";
 import { RootState } from "../state";
-const LouvreNavbar = (props: any) => {
+const LouvreNavbar = () => {
   const { data: currentUser } = useSelector(
     (state: RootState) => state.userInfo
   );

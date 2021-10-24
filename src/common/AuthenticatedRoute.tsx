@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Route, Redirect } from "react-router-dom";
 import { useActions } from "../hooks/useActions";
 import { useSelector } from "../hooks/useTypedSelector";
 import AdminScreen from "../screens/AdminScreen";
