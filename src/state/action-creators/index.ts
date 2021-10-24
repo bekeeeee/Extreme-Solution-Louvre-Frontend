@@ -188,3 +188,22 @@ export const listUsers = () => {
     }
   };
 };
+
+export const signout = () => {
+  const instance = axios.create({
+    withCredentials: true,
+  });
+
+  return async (dispatch: Dispatch<UserAction>, getState: () => RootState) => {
+    try {
+      await instance.get("/api/v1/user/signout", {
+        withCredentials: true,
+        headers: { "Access-Control-Allow-Origin": "*" },
+      });
+      console.log("getState", getState());
+    } catch (err: any) {
+      console.log("err", err);
+      dispatch({ type: ActionTypeUser.USER_SIGNIN_FAIL, payload: err.message });
+    }
+  };
+};

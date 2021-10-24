@@ -8,7 +8,7 @@ const LouvreNavbar = (props: any) => {
     (state: RootState) => state.userInfo
   );
 
-  const { currentUser: currentUserFn } = useActions();
+  const { currentUser: currentUserFn, signout } = useActions();
 
   useEffect(() => {
     const fetchCurrentUser = async () => {
@@ -34,7 +34,7 @@ const LouvreNavbar = (props: any) => {
 
             <i className="fa fa-caret-down"></i>
             <ul className="dropdown-content">
-              <Link to="#signout" onClick={() => console.log("signout")}>
+              <Link to="#signout" onClick={() => signout()}>
                 Sign Out
               </Link>
             </ul>
