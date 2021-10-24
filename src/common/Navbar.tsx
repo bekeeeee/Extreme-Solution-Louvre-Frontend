@@ -34,7 +34,7 @@ const LouvreNavbar = (props: any) => {
 
             <i className="fa fa-caret-down"></i>
             <ul className="dropdown-content">
-              <Link to="#signout" onClick={() => signout()}>
+              <Link to="/" onClick={() => signout()}>
                 Sign Out
               </Link>
             </ul>

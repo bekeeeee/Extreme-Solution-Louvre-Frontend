@@ -16,7 +16,6 @@ const AuthenticatedRoute: () => JSX.Element = () => {
     };
     fetchCurrentUser();
   }, []);
-  console.log("currentUser", currentUser);
   return currentUser?.role === "admin" ? (
     <AdminScreen />
   ) : currentUser?.role === "user" ? (

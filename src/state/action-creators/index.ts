@@ -35,7 +35,7 @@ export const currentUser = () => {
     } catch (err: any) {
       dispatch({
         type: ActionTypeUser.USER_SIGNIN_FAIL,
-        payload: err.response.data.errors,
+        payload: err.response.data.error,
       });
     }
   };
@@ -64,7 +64,7 @@ export const login = (username: string, password: string) => {
     } catch (err: any) {
       dispatch({
         type: ActionTypeUser.USER_SIGNIN_FAIL,
-        payload: err.response.data.errors,
+        payload: err.response.data.error,
       });
     }
   };
@@ -180,7 +180,6 @@ export const listUsers = () => {
         payload: users,
       });
     } catch (err: any) {
-      console.log("errorrrrrrrr", err);
       dispatch({
         type: ActionTypeUserList.USER_LIST_FAIL,
         payload: err.message,
@@ -200,9 +199,7 @@ export const signout = () => {
         withCredentials: true,
         headers: { "Access-Control-Allow-Origin": "*" },
       });
-      console.log("getState", getState());
     } catch (err: any) {
-      console.log("err", err);
       dispatch({ type: ActionTypeUser.USER_SIGNIN_FAIL, payload: err.message });
     }
   };

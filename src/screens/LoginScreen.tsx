@@ -21,7 +21,6 @@ const LoginScreen = (props: any) => {
     e.preventDefault();
 
     await login(username, password);
-    console.log("userInfo===", userInfo);
     if (userInfo?.role === "admin") <Redirect to="/admin" />;
     else <Redirect to="/gallery" />;
 
@@ -35,8 +34,8 @@ const LoginScreen = (props: any) => {
         </div>
         <form className="form-new" onSubmit={submitHandler}>
           {loading && <LoadingBox></LoadingBox>}
-          {error?.message && (
-            <MessageBox variant="danger">{error.message}</MessageBox>
+          {error?.length! > 0 && (
+            <MessageBox variant="danger">{error}</MessageBox>
           )}
           <div>
             <label htmlFor="username">Username</label>

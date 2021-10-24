@@ -1,7 +1,6 @@
 import { ActionTypeUser } from "../action-types/userTypes";
 import { LoginInputs } from "../state-types/loginInputs";
 import { CurrentUser } from "../state-types/currentUser";
-import { Error } from "../state-types/Error";
 import { RegisterInputs } from "../state-types/RegisterInputs";
 interface UserSigninRequest {
   type: ActionTypeUser.USER_SIGNIN_REQUEST;
@@ -15,7 +14,7 @@ interface UserSigninSuccess {
 
 interface UserSigninFail {
   type: ActionTypeUser.USER_SIGNIN_FAIL;
-  payload: Error;
+  payload: string;
 }
 
 interface UserSignupRequest {
@@ -30,7 +29,7 @@ interface UserSignupSuccess {
 
 interface UserSignupFail {
   type: ActionTypeUser.USER_SIGNUP_FAIL;
-  payload: Error;
+  payload: string;
 }
 
 interface UserLogout {

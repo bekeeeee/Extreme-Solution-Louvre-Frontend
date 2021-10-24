@@ -15,7 +15,6 @@ const ArtScreen = () => {
   const { data: arts, error, loading } = useSelector((state) => state.artList);
   const { data: artDetails } = useSelector((state) => state.artDetails);
 
-  console.log("arts", arts);
 
   useEffect(() => {
     const fetchData = async () => {

@@ -187,7 +187,7 @@ img.large {
 
   /* position: relative; */
 }
-.dropdown span:first-of-type{
+.dropdown span:first-of-type {
   font-size: 1.25em;
   font-weight: bold;
 }
@@ -602,4 +602,13 @@ td button {
   position: absolute;
   top: 42px;
   right: 1px;
+}
+
+.see-details {
+  margin-top: 20px;
+  color: blue;
+}
+
+.see-details span {
+  cursor: pointer;
 }

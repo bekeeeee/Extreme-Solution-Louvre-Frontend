@@ -4,7 +4,7 @@ import { CurrentUser } from "../state-types/currentUser";
 import { Error } from "../state-types/Error";
 interface CurrentUserctState {
   loading: boolean;
-  error: Error | null;
+  error: string | null;
   data: CurrentUser | null;
 }
 const initialState = {

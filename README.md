@@ -49,7 +49,8 @@ Navigate to `http://localhost:3000`
 - Screens Document
 
 http://localhost:3000/login
-![alt text](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/Assets/gallery/Login.png?raw=true)
+
+- ![alt text](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/src/Assets/gallery/Login.png?raw=true)
 
 post `http://localhost:5000/api/v1/user` to signup
 

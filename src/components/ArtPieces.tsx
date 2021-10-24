@@ -7,7 +7,7 @@ const ArtPieces = ({ art }: any) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [artsPerPage] = useState<number>(8);
   const { data: arts, error, loading } = useSelector((state) => state.artList);
-  const { deleteArtItem } = useActions();
+  const { deleteArtItem, artDetails } = useActions();
 
   const indexOfLastart = currentPage * artsPerPage;
   const indexOfFirstart = indexOfLastart - artsPerPage;
@@ -37,7 +37,15 @@ const ArtPieces = ({ art }: any) => {
                   </td>
                   <td>{art.artist}</td>
                   <td>{art.artist}</td>
-                  <td>{art.description}</td>
+                  <td>
+                    {art.description}
+                    <br />
+                    <div className="see-details">
+                      <span onClick={() => artDetails(art.id)}>
+                        See Details{" "}
+                      </span>
+                    </div>
+                  </td>
                   <td>
                     <button
                       onClick={(e) => {

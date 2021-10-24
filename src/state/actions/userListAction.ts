@@ -10,7 +10,7 @@ interface UserListSuccessAction {
 }
 interface UserListFailAction {
   type: ActionTypeUserList.USER_LIST_FAIL;
-  payload: Error;
+  payload: string;
 }
 
 export type UserListAction =

@@ -23,7 +23,6 @@ export default ({ url, method, body, onSuccess }: any) => {
 
       return response.data;
     } catch (err: any) {
-      console.log(err);
 
       setErrors(
         <div className="alert alert-danger">
