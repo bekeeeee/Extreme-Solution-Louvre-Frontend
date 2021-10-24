@@ -29,7 +29,7 @@ const LouvreNavbar = (props: any) => {
       <div>
         {currentUser?.username ? (
           <div className="dropdown">
-            <span className="username-nav">{currentUser.username}</span>
+            <span>{currentUser.username}</span>
             <span>{currentUser.role}</span>
 
             <i className="fa fa-caret-down"></i>

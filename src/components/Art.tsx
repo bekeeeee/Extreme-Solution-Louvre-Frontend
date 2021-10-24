@@ -4,9 +4,9 @@ const Art = ({ art }: any) => {
   const { artDetails } = useActions();
 
   return (
-    <div className="card" key={art._id}>
+    <div className="card" key={art.id}>
       <img
-        onClick={() => artDetails(art._id)}
+        onClick={() => artDetails(art.id)}
         className="medium"
         src={art.image}
         alt="art"

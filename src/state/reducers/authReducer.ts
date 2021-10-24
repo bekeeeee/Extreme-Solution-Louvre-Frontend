@@ -25,6 +25,16 @@ const reducer = (
     case ActionTypeUser.USER_SIGNIN_FAIL:
       return { loading: false, error: action.payload, data: null };
 
+    case ActionTypeUser.USER_SIGNUP_REQUEST:
+      return { loading: true, error: null, data: null };
+    case ActionTypeUser.USER_SIGNUP_SUCCESS:
+      return { loading: false, error: null, data: action.payload };
+    case ActionTypeUser.USER_SIGNUP_FAIL:
+      return { loading: false, error: action.payload, data: null };
+
+    case ActionTypeUser.USER_SIGNOUT:
+      return { loading: false, error: null, data: null };
+
     case ActionTypeUser.CURRENT_USER:
       return { loading: false, error: null, data: action.payload };
 
