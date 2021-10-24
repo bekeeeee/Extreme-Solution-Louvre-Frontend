@@ -50,10 +50,15 @@ Navigate to `http://localhost:3000`
 
 http://localhost:3000/login
 ![alt text](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/src/Assets/gallery/Login.png?raw=true)
-.. image:: https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/Login.png
+.. image:: "https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/Login.png"
    :height: 100px
    :width: 200 px
    :scale: 50 %
+   
+<p align="center">
+  <img src="https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/Login.png" width="350" title="hover text">
+</p>
+
 post `http://localhost:5000/api/v1/user` to signup
 
 post `http://localhost:5000/api/v1/user/login` to login
