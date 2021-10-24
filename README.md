@@ -1,6 +1,6 @@
 # Online Louvre
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bekeeeee/Extreme-Solution-Louvre-Backend)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend)
 
 # Description
 
@@ -50,7 +50,10 @@ Navigate to `http://localhost:3000`
 
 http://localhost:3000/login
 ![alt text](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/src/Assets/gallery/Login.png?raw=true)
-
+.. image:: https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/Login.png
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
 post `http://localhost:5000/api/v1/user` to signup
 
 post `http://localhost:5000/api/v1/user/login` to login
