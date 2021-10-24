@@ -1,6 +1,6 @@
 # Online Louvre
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bekeeeee/Extreme-Solution-Louvre-Backend)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend)
 
 # Description
 
@@ -49,6 +49,7 @@ Navigate to `http://localhost:3000`
 - Screens Document
 
 http://localhost:3000/login
+<<<<<<< HEAD
 
 - ![alt text](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/src/Assets/gallery/Login.png?raw=true)
 
@@ -71,6 +72,23 @@ get `http://localhost:5000/api/v1/art` to get all arts
 patch `http://localhost:5000/api/v1/art/:id` to edit an art
 
 delete `http://localhost:5000/api/v1/art/:id` to delete an art
+=======
+   
+<p align="center">
+  <img src="https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/Login.png" width="350" title="hover text">
+</p>
+
+Incase the user is admin it will redirect to admin board
+<p align="center">
+  <img src="https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/Art%20pieces%20page.png" width="350" title="hover text">
+  <img src="https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/users%20page.png" width="350" title="hover text">
+</p>
+
+or it will redirecr to gallery
+<p align="center">
+  <img src="https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/blob/master/src/Assets/gallery/Gallery%20Page.png" width="350" title="hover text">
+</p>
+>>>>>>> 3105dcbad6bb2e91b289e7a1c61ff2095c0eaa16
 
 ## Testing
 
@@ -85,7 +103,7 @@ npm run test
 
 ## Updates
 
-In the next version we implement forgot password, reset password and using nodemailer.
+In the next version we implement more screens.
 
 # License
 
