@@ -1,8 +1,18 @@
-import React from "react";
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+
+import Navbar from "./common/Navbar";
 
 function App() {
-  return <div className="App">Hello</div>;
+  // const cartItems = useSelector((state) => state.cart.cartItems);
+
+  return (
+    <BrowserRouter>
+      <div className="grid-container">
+        <Navbar />
+        ghgh
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
