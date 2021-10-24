@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+# Online Louvre
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bekeeeee/Extreme-Solution-Louvre-Backend)
 
-## Available Scripts
+# Description
 
-In the project directory, you can run:
+- Create login screen.
+- Create admin dashboard.
+- Create gallery available to login users
 
-### `npm start`
+# Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Installation](#installation)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Getting started](#gettinStarted)
 
-### `npm test`
+- [Tests](#tests)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Updates](#updates)
 
-### `npm run build`
+- [License](#license)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The following necessary dependencies must be installed to run the application properly: nodejs and typescript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Getting started
 
-### `npm run eject`
+- Clone the repository
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+git clone  https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Build and run the project
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navigate to `http://localhost:3000`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Screens Document
+
+http://localhost:3000/login
+![alt text](https://github.com/bekeeeee/Extreme-Solution-Louvre-Frontend/Assets/gallery/Login.png?raw=true)
+
+post `http://localhost:5000/api/v1/user` to signup
+
+post `http://localhost:5000/api/v1/user/login` to login
+
+get `http://localhost:5000/api/v1/user` to get all users
+
+get `http://localhost:5000/api/v1/user/currentUser` to get currentUser
+
+get `http://localhost:5000/api/v1/user/signout` to signout
+
+http://localhost:5000/api/v1/art
+
+post `http://localhost:5000/api/v1/art` to create an art
+
+get `http://localhost:5000/api/v1/art` to get all arts
+
+patch `http://localhost:5000/api/v1/art/:id` to edit an art
+
+delete `http://localhost:5000/api/v1/art/:id` to delete an art
+
+## Testing
+
+The tests are written in Jest.
+
+- Run tests files
+
+```
+npm run test
+
+```
+
+## Updates
+
+In the next version we implement forgot password, reset password and using nodemailer.
+
+# License
+
+This project is license under the MIT license.
