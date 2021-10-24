@@ -1,7 +1,8 @@
 import { UserAction } from "../actions/userAction";
 import { ActionTypeUser } from "../action-types/userTypes";
 import { CurrentUser } from "../state-types/currentUser";
-interface CurrentUsertState {
+import { Error } from "../state-types/Error";
+interface CurrentUserctState {
   loading: boolean;
   error: Error | null;
   data: CurrentUser | null;
@@ -13,10 +14,17 @@ const initialState = {
 };
 
 const reducer = (
-  state: CurrentUsertState = initialState,
+  state: CurrentUserctState = initialState,
   action: UserAction
-): CurrentUsertState => {
+): CurrentUserctState => {
   switch (action.type) {
+    case ActionTypeUser.USER_SIGNIN_REQUEST:
+      return { loading: true, error: null, data: null };
+    case ActionTypeUser.USER_SIGNIN_SUCCESS:
+      return { loading: false, error: null, data: action.payload };
+    case ActionTypeUser.USER_SIGNIN_FAIL:
+      return { loading: false, error: action.payload, data: null };
+
     case ActionTypeUser.CURRENT_USER:
       return { loading: false, error: null, data: action.payload };
 

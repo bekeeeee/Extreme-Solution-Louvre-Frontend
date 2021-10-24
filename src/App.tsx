@@ -1,15 +1,23 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
 
 import Navbar from "./common/Navbar";
+import ProtectedRoute from "./common/ProtectedRoute";
+import LoginScreen from "./screens/LoginScreen";
 
 function App() {
-  // const cartItems = useSelector((state) => state.cart.cartItems);
-
   return (
     <BrowserRouter>
       <div className="grid-container">
         <Navbar />
-        ghgh
+        <div className="main">
+          <Switch>
+            <ProtectedRoute
+              exact
+              path="/login"
+              component={LoginScreen}
+            ></ProtectedRoute>
+          </Switch>
+        </div>
       </div>
     </BrowserRouter>
   );

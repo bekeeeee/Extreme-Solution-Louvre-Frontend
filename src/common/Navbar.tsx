@@ -15,7 +15,7 @@ const LouvreNavbar = (props: any) => {
       await currentUserFn();
     };
     fetchCurrentUser();
-  }, [currentUserFn]);
+  }, []);
 
   return (
     <header className="row">

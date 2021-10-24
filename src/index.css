@@ -142,3 +142,110 @@ a.brand {
 .p-1 {
   padding: 1rem;
 }
+
+/* Alert */
+.loading {
+  display: block !important;
+}
+.success {
+  color: #20a020;
+}
+.danger {
+  color: #a02020;
+}
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+.alert-info {
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+.alert-danger {
+  color: #a02020;
+  background-color: #ffe0e0;
+}
+.alert-success {
+  color: #20a020;
+  background-color: #eeffe0;
+}
+
+.login-background {
+  background-image: url("Assets/login/bg.svg");
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.form-new {
+  max-width: 60rem;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  /* width: 150px; */
+}
+.form-new > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.form-new label {
+  margin: 1rem 0;
+}
+
+.center-content {
+  margin: auto;
+  width: 33%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.center-content h1 {
+  margin: auto;
+  text-align: center;
+}
+
+.label-form {
+  /* border-bottom: 5px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 2px solid #87cefa;
+  padding: 0;
+}
+
+.label-form ::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #4169e1;
+  bottom: 0;
+  width: 33%;
+  left: 33%;
+  z-index: 5;
+}
+
+.password-input {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: relative;
+}
+
+.password-input .show-icon {
+  background: url("Assets/login/Group\ 18.svg");
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  content: "";
+  position: absolute;
+  top: 42px;
+  right: 1px;
+}
