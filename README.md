@@ -78,7 +78,7 @@ npm run test
 
 ## Updates
 
-In the next version we implement forgot password, reset password and using nodemailer.
+In the next version we implement more screens.
 
 # License
 
